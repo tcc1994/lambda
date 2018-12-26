@@ -13,5 +13,11 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ibatis-2.3.4.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ibatis-common-2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ibatis-core-3.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ibatis-dao-2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/ibator-1.2.1.681-sources.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.16.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
