@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE abatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Abator for iBATIS Configuration 1.0//EN" "http://ibatis.apache.org/dtd/abator-config_1_0.dtd" >
+<abatorConfiguration >
+	<abatorContext >
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.211.226:3306/adwl_dev_v2?useUnicode=true&amp;characterEncoding=utf8" 
+			userId="root" password="111111" >
+			<classPathEntry location="d:\mysql-connector-java-5.1.31.jar" />
+		</jdbcConnection>
+		
+    <javaModelGenerator targetPackage="com.ada.wuliu.shipper.front.domian" targetProject="IbatisAuto" />
+    <sqlMapGenerator type="DEFAULT" targetPackage="ibats" targetProject="IbatisAuto" />
+    <daoGenerator  targetPackage="com.ada.wuliu.mobile.front.dao" targetProject="IbatisAuto" type="GENERIC-SI">
+   		 <property name="enableSubPackages" value="true" />
+    </daoGenerator>
+     	
+     	   <table schema="" domainObjectName="LineLogistic" tableName="adwl_line_logistic">
+            <generatedKey column="ll_id" sqlStatement="MySql" identity="true" />
+            <columnOverride column="ll_create_time" javaType="String" jdbcType="datetime"/>
+            <columnOverride column="ll_update_time" javaType="String" jdbcType="datetime"/>
+        </table>
+        
+	</abatorContext>
+</abatorConfiguration>
