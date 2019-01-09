@@ -7,17 +7,22 @@
 			<classPathEntry location="d:\mysql-connector-java-5.1.31.jar" />
 		</jdbcConnection>
 		
-    <javaModelGenerator targetPackage="com.ada.wuliu.shipper.front.domian" targetProject="IbatisAuto" />
+    <javaModelGenerator targetPackage="com.ada.wuliu.shipper.front.domian.invoice" targetProject="IbatisAuto" />
     <sqlMapGenerator type="DEFAULT" targetPackage="ibats" targetProject="IbatisAuto" />
     <daoGenerator  targetPackage="com.ada.wuliu.mobile.front.dao" targetProject="IbatisAuto" type="GENERIC-SI">
    		 <property name="enableSubPackages" value="true" />
     </daoGenerator>
      	
-     	   <table schema="" domainObjectName="LineLogistic" tableName="adwl_line_logistic">
-            <generatedKey column="ll_id" sqlStatement="MySql" identity="true" />
-            <columnOverride column="ll_create_time" javaType="String" jdbcType="datetime"/>
-            <columnOverride column="ll_update_time" javaType="String" jdbcType="datetime"/>
-        </table>
         
+        
+         <table schema="" domainObjectName="AdwlInvoiceQualifications" tableName="adwl_invoice_qualification">
+            <generatedKey column="iq_id" sqlStatement="MySql" identity="true" />
+            <columnOverride column="create_datetime" javaType="String" jdbcType="datetime"/>
+            <columnOverride column="update_datetime" javaType="String" jdbcType="datetime"/>
+            <columnOverride column="audit_datetime" javaType="String" jdbcType="datetime"/>
+            
+            
+            
+        </table>
 	</abatorContext>
 </abatorConfiguration>
